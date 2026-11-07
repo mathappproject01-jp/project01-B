@@ -8,7 +8,7 @@ import japanize_matplotlib
 
 from matplotlib import font_manager
 import matplotlib.pyplot as plt
-#import japanize_matplotlib
+import japanize_matplotlib
 
 #st.write("現在のフォント:", plt.rcParams["font.family"])
 
@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 
 from matplotlib import font_manager as fm
 
-font_path = "fonts/ipaexg.ttf"
+font_path = "ipaexg.ttf"
 
 font_prop = fm.FontProperties(fname=font_path)
 
