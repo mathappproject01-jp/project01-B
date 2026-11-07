@@ -8,7 +8,7 @@ import japanize_matplotlib
 
 from matplotlib import font_manager
 import matplotlib.pyplot as plt
-import japanize_matplotlib
+#import japanize_matplotlib
 
 #st.write("現在のフォント:", plt.rcParams["font.family"])
 
