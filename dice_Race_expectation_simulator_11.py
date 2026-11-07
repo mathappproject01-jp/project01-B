@@ -7,8 +7,13 @@ import matplotlib.pyplot as plt
 import japanize_matplotlib
 
 from matplotlib import font_manager
+import matplotlib.pyplot as plt
+import japanize_matplotlib
 
-plt.rcParams["font.family"] = "IPAexGothic"
+st.write("現在のフォント:", plt.rcParams["font.family"])
+
+#plt.rcParams["font.family"] = "IPAexGothic"
+
 # ==================================================
 # タイトル
 # ==================================================
