@@ -4,7 +4,7 @@ import streamlit as st
 import random
 import numpy as np
 import matplotlib.pyplot as plt
-#import japanize_matplotlib
+import japanize_matplotlib
 
 from matplotlib import font_manager
 
