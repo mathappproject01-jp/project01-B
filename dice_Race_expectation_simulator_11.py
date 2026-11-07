@@ -1,16 +1,5 @@
 # dice_Race_expectation_simulator_11.py
-
-###
-fig_test, ax_test = plt.subplots()
-
-ax_test.set_title("日本語テスト")
-ax_test.set_xlabel("出目")
-ax_test.set_ylabel("回数")
-
-ax_test.plot([1,2,3],[1,4,2])
-
-st.pyplot(fig_test)
-###
+# さいころ発展課題用
 
 import streamlit as st
 import random
@@ -22,15 +11,17 @@ import os
 font_path = "ipaexg.ttf"
 
 if os.path.exists(font_path):
+
     fm.fontManager.addfont(font_path)
 
     font_prop = fm.FontProperties(fname=font_path)
 
     plt.rcParams["font.family"] = font_prop.get_name()
 
-    st.success(f"使用フォント: {font_prop.get_name()}")
+    st.write("使用フォント:", font_prop.get_name())
+
 else:
-    st.error(f"{font_path} が見つかりません")
+    st.error("ipaexg.ttf が見つかりません")
 
 # ==================================================
 # タイトル
