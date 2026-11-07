@@ -10,9 +10,19 @@ from matplotlib import font_manager
 import matplotlib.pyplot as plt
 import japanize_matplotlib
 
-st.write("現在のフォント:", plt.rcParams["font.family"])
+#st.write("現在のフォント:", plt.rcParams["font.family"])
 
 #plt.rcParams["font.family"] = "IPAexGothic"
+
+from matplotlib import font_manager as fm
+
+font_path = "fonts/ipaexg.ttf"
+
+font_prop = fm.FontProperties(fname=font_path)
+
+plt.rcParams["font.family"] = font_prop.get_name()
+
+
 
 # ==================================================
 # タイトル
